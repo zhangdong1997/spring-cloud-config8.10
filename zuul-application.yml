@@ -7,9 +7,6 @@ spring:
 zuul:
   prefix: /api # 添加路由前缀
   routes:
-    user-service: # 这里是路由id，随意写
-      path: /user-service/** # 这里是映射路径
-      url: http://127.0.0.1:8081 # 映射路径对应的实际url地址
     user-consumer-feign:
       path: /user-consumer-feign/** # 这里是映射路径
       url: http://127.0.0.1:8085 # 映射路径对应的实际url地址
@@ -31,9 +28,6 @@ spring:
 zuul:
   prefix: /api # 添加路由前缀
   routes:
-    user-service: # 这里是路由id，随意写
-      path: /user-service/** # 这里是映射路径
-      url: http://127.0.0.1:8082 # 映射路径对应的实际url地址
     user-consumer-feign:
       path: /user-consumer-feign/** # 这里是映射路径
       url: http://127.0.0.1:8086 # 映射路径对应的实际url地址
